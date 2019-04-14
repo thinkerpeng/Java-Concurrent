@@ -2,6 +2,7 @@ package concurrent;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.concurrent.locks.Lock;
 
 /**
  * Desc:
@@ -10,7 +11,7 @@ import java.util.Date;
  */
 public class MutexTest
 {
-    private static Mutex lock = new Mutex();
+    private static Lock lock = new Mutex();
 
     public static void main(String[] args)
     {

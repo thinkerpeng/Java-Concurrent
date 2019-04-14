@@ -3,13 +3,14 @@ package concurrent;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
 
 /**
  * Desc:自定义独占锁
  * Creator: pengweixiang
  * Date: 2019-04-07
  */
-public class Mutex
+public class Mutex implements Lock
 {
     /**
      * 静态内部类，自定义同步器
