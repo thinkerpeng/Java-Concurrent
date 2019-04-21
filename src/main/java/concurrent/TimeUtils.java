@@ -36,4 +36,13 @@ public class TimeUtils
     {
         System.out.println("Current time: " + sdf.format(new Date()));
     }
+
+    /**
+     * 获取当前时间
+     * @return time
+     */
+    public static String getCurrentTime()
+    {
+        return sdf.format(new Date());
+    }
 }

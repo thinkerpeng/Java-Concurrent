@@ -44,13 +44,13 @@ public class TwinsLockTest
             }
         }
 
-        for (int i = 10; i > 0; i--)
+        for (int i = 0; i < 10; i++)
         {
             Worker worker = new Worker("worker" + i);
             worker.setDaemon(true);
             worker.start();
         }
 
-        TimeUtils.sleep(10);
+        TimeUtils.sleep(5);
     }
 }
