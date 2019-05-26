@@ -2,7 +2,6 @@ package concurrent;
 
 import org.junit.Test;
 
-import java.sql.Time;
 
 /**
  * Desc: 读写锁Cache测试类
