@@ -1,7 +1,7 @@
 package threadpool;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.Random;
+import java.util.concurrent.*;
 
 /**
  * Desc: ThreadPoolExecutor测试类
@@ -18,7 +18,7 @@ public class ThreadPoolExecutorTest
         ExecutorService service = Executors.newSingleThreadExecutor();
         service.submit(task);
         service.shutdown();
-
+/*
         //固定线程数的线程池.
         //限制当前线程数量的场景, 适用负载均衡较重的服务器
         service = Executors.newFixedThreadPool(5);
@@ -35,7 +35,7 @@ public class ThreadPoolExecutorTest
         {
             service.submit(task);
         }
-        service.shutdown();
+        service.shutdown();*/
     }
 
     private static class Task implements Runnable
